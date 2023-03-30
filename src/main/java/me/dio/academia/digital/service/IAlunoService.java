@@ -6,6 +6,7 @@ import me.dio.academia.digital.entity.form.AlunoForm;
 import me.dio.academia.digital.entity.form.AlunoUpdateForm;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IAlunoService {
   /**
@@ -20,7 +21,7 @@ public interface IAlunoService {
    * @param id - id do Aluno que será exibido.
    * @return - Aluno de acordo com o Id fornecido.
    */
-  Aluno get(Long id);
+  Optional<Aluno> get(Long id);
 
   /**
    * Retorna todos os Alunos que estão no banco de dados.
